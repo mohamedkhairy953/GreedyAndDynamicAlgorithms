@@ -2,23 +2,6 @@ package min_spanning_tree.prim
 
 import java.util.*
 
-data class Edge(val v: Vertex, val w: Vertex, val cost: Int)
-data class Vertex(val edges: List<Edge>, var key: Int = Int.MAX_VALUE, val name: String) {
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as Vertex
-
-        if (name != other.name) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        return name.hashCode()
-    }
-}
 
 fun primAlgorithmByHeaps(edges: List<Edge>, vertices: List<Vertex>) {
     val s = vertices.first()
