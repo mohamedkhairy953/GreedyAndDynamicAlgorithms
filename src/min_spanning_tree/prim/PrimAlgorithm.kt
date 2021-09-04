@@ -1,5 +1,7 @@
 package min_spanning_tree.prim
 
+import Edge
+import Vertex
 import java.util.*
 
 

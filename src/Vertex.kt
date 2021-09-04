@@ -1,5 +1,3 @@
-package min_spanning_tree.prim
-
 data class Vertex(val edges: List<Edge>, var key: Int = Int.MAX_VALUE, val name: String) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

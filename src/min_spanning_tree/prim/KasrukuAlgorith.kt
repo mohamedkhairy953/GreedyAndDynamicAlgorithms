@@ -1,5 +1,8 @@
 package min_spanning_tree.prim
 
+import Edge
+import Vertex
+
 fun kruskal(vertices: List<Vertex>, edges: List<Edge>) {
     val selectedEdges = mutableListOf<Edge>()
     val ds = DisjointSet(vertices.size)
